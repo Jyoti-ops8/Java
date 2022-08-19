@@ -1,6 +1,5 @@
            /* First assigment */
 
-import java.lang.ArithmeticException;
 import java.util.Scanner;
 
 public class Exception {
@@ -9,30 +8,36 @@ public class Exception {
       //take input from the user as string
       Scanner sc = new Scanner(System.in);
       
+      int i1,i2,res;
       System.out.println("Enter the value of n1:");
-      int n1 = sc.nextInt();
+      String n1 = sc.next();
  
       System.out.println("Enter the value of n2:");
-      int n2 = sc.nextInt();  
+      String n2 = sc.next();  
        
       try {
+          i1=Integer.parseInt(n1);
+          i2=Integer.parseInt(n2);
 
-      int n3 = n1/n2;
-   
-      if(n2>0) {
-         System.out.println("divison of two number is:"+n3);
-      }
-      
-      else {
-         System.out.println("invalid division");
-      }
-      }
+          res = i1/i2;
+          System.out.println("Result: " + res );
+     }
 
-      catch(ArithmeticException e) {
-         System.out.println(e);
-      }
-      
+     catch(NumberFormatException e) {
+         System.out.println("Format Mismatch");
+     }
+
+     catch(ArithmeticException ae) {
+         System.out.println("Invalid Division");
+     }
+     
+     catch(IllegalArgumentException i) {
+         System.out.println("Exception encountered");
+     }
+
+     finally {
          System.out.println("Exception Handling Completed");
+     } 
    }
 }
     
