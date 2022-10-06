@@ -1,0 +1,21 @@
+/* Write a program for addition() and multiplication() of two numbers.
+Write test cases for each of these methods.*/
+
+package LabTestOnJunit;
+
+public class AddMul {
+        //Addition Method
+	public static int Addition(int x, int y) {
+	     x=19;
+	     y=25;
+	     int z=x+y;
+	     
+	     return z;
+	}
+
+	//Multiplication Method
+	public static int Multiplication(int x, int y) {
+	     int mul=x*y;
+	     return mul;
+	}
+}
