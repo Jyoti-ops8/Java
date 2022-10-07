@@ -1,0 +1,24 @@
+/* Create an ArrayList.Add few elements.
+Write following test cases in a separate java file--
+a.)Test for empty list.
+b.)Test  for size of arrayList */
+
+package LabTestOnJunit;
+
+import java.util.ArrayList;
+
+public class MyArrayList {
+		
+       public static ArrayList<Integer> myArrayListMain() {
+		//creating the object arr for ArrayList
+		ArrayList<Integer> arr=new ArrayList<Integer>();
+                //add values
+		arr.add(12);
+		arr.add(13);
+		arr.add(14);
+		arr.add(15);
+		arr.add(16);
+
+		return arr;	
+	}
+}
